@@ -12,7 +12,7 @@ https://www.github.com/asseridos/cloud-competition-solution/images/Teaser_Animat
 # Données
 Comme dit ci-desssus, il s'agit d'un problème de classification. Il faut identifier les régions des images satellites fournies qui correspondent aux types de nuages définis dont les labels sont : 'Fish', 'Flower', 'Gravel', 'Sugar'. Pour être plus clair, il faudra segmenter chaque image de l'ensemble de test en différentes régions (suites de pixels) correspondant à des types de nuages. Ainsi, chaque image contient au moins un type de nuage et peut contenir tous les 4 types de nuages.
 
-Le segment (la région) correspondant à chaque label de type de nuage pour une image est codé sur une seule ligne, même s'il existe plusieurs zones non contiguës de le même type dans une image. S'il n'y a pas de zone d'un certain type de nuage pour une image, la prédiction EncodedPixels correspondante doit être laissée vide.
+Le segment (la région) correspondant à chaque label de type de nuage pour une image est codé sur une seule ligne, même s'il existe plusieurs zones non contiguës du même type dans une image. S'il n'y a pas de zone d'un certain type de nuage pour une image, la prédiction EncodedPixels correspondante doit être laissée vide.
 
 # Liste des fichiers
 - train.csv - les segmentations pour chaque paire image-label dans les images d'entraînement. Ces segmentations sont au format RLE(Run Length Encoded)
