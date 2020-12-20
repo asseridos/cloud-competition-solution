@@ -24,3 +24,15 @@ Le segment (la région) correspondant à chaque label de type de nuage pour une 
 - sample_submission.csv - un exemple de fichier de soumission au format correct
 
 # Métriques
+## Coefficient de similarité de Dice
+Cette compétition est évaluée sur la base du coefficient de Dice.
+Le coefficient encore connu sous le nom d'indice de Sorensen-Dice est un indicateur statistique qui mesure la similarité de deux échantillons. Cet indice a pour formule générale :
+
+'images/dice-coef.png'
+où |X| est le nombre d'éléments de X et |Y| le nombre d'éléments de Y. L'indice peut varier de 0 (quand X et Y sont disjoints) à 1 (quand X et Y sont égaux).
+Dans le cas de cette compétition, ces opérations peuvent être exprimées en terme d'opérations vectorielles sur les vecteurs X et Y. Le coefficient de Dice est donc utilisé ici pour comparer la similarité pixel-pixel entre une segmentation prédite et la vérité.
+
+'images/dice-coef-2.png'
+où X est l'ensemble de pixels prédits et Y l'ensemble de pixels correspondant à la vérité. Lorsque X et Y sont vides, il n'est pas possible de calculer cette formule  puisqu'on se retrouve face à une indétermination. Dans ce cas spécifique, le coefficient prend automatiquement la valeur 1. Le score correspond en fin de compte à la moyenne des coefficients de Dice pour chaque paire <Image, Label> de l'ensemble de test.
+
+## Encodage des pixels
