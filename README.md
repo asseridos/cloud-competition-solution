@@ -1,5 +1,7 @@
+# GEMA/IA-School
+
 # cloud-competition-solution
- Solution de la competition Understanding clouds par Chris Deotte
+ Solution de la competition Understanding clouds par Chris Deotte et commenté par Asser IDOSSOU et Charles Dorian NGANKAM
 
 # Description de la compétition
 https://www.kaggle.com/c/understanding_cloud_organization
